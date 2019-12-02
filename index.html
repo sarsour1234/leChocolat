@@ -91,6 +91,117 @@
             </div>
         </div>
     </div>
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve your baskets </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label class="col-12 col-sm-4">Number of baskets</label>
+                            <div class="col-12 col-sm-8">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio3" value="option2">
+                                    <label class="form-check-label" for="inlineRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio4" value="option4">
+                                    <label class="form-check-label" for="inlineRadio4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio5" value="option5">
+                                    <label class="form-check-label" for="inlineRadio5">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio6" value="option6">
+                                    <label class="form-check-label" for="inlineRadio6">6</label>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label class="col-12 col-sm-4 col-form-label">Date and Time</label>
+                            <div class="input-group col-12 col-sm-4 ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="date"><i class="fa fa-calendar"
+                                            aria-hidden="true"></i>
+
+                                    </span>
+
+                                </div>
+                                <input type="date" class="form-control" id="date'">
+
+                            </div>
+                            <div class="input-group col-12 col-sm-4 ">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="time"><i class="fa fa-clock-o"
+                                            aria-hidden="true"></i>
+
+                                    </span>
+
+                                </div>
+                                <input type="time" class="form-control" id="time'">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-12 col-sm-4">Home Delivery</label>
+                            <div class="col-12 col-sm-8">
+                                <div class="btn-group">
+                                    <div class="btn btn-success">
+                                        <input type="radio" name="reserveOptions"
+                                            id="inlineRadioYes" value="yes" checked>Yes
+                                        
+                                    </div>
+                                    <div class="btn btn-danger">
+                                        <input type="radio" name="reserveOptions"
+                                            id="inlineRadioNo" value="no">No
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="form-group row">
+                            <div class="col 12 col-sm-3">
+                                <button type="submit" class="btn btn-primary btn-sm">Reserve</button>
+                            </div>
+                        </div> -->
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" 
+                        data-dismiss="modal">Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-sm">
+                        Reserve
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
     <header class="jumbotron">
         <div class="container">
@@ -105,9 +216,7 @@
                     <img src="images/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a type="button" class="btn btn-warning btn-sm btn-block" data-toggle="tooltip" data-html="true"
-                        title="Or Call us at <br><strong>+ 987 6543 2100</strong>" data-placement="bottom"
-                        href="#reserve-form">
+                    <a type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#reserveModal" role="button">
                         Reserve your baskets
                     </a>
 
@@ -172,66 +281,9 @@
                 </div>
             </div>
         </div>
-        <div class="row flex-row-reverse row-content  align-items-center">
-            <div class="col-sm-4 col-md-3">
-                <h3>Our famous chocolates</h3>
-            </div>
-            <div class="col-sm col-md">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/dark85.jpg"
-                        alt="85% DARK CHOCOLATE">
-                    <div class="media-body">
-                        <h2 class="mt-0">85% DARK CHOCOLATE
-                            <span class="badge badge-danger">HOT</span>
-                            <span class="badge badge-pill badge-success">$0.99</span>
-                        </h2>
-
-                        <p class="col d-none d-md-block">Dark chocolate with no added sugar.
-                            Here you can taste the flavor of cocoa beans.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
-        <div class="row flex-row-reverse row-content  align-items-center">
-            <div class="col-sm-4 col-md-3">
-                <h3>WEEK'S OFFER</h3>
-            </div>
-            <div class="col-sm col-md">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/promotion.jpg"
-                        alt="Our basket">
-                    <div class="media-body">
-                        <h3 class="mt-0">Our basket
-                            <span class="badge badge-danger">HOT</span>
-                            <span class="badge badge-pill badge-success">$4.99</span>
-                        </h3>
 
-                        <p class="col d-none d-md-block"> This week we offer a basket with 10 delicious chocolate
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row flex-row-reverse row-content  align-items-center">
-            <div class="col-sm-4 col-md-3">
-                <h3>Meet our Specialists</h3>
-            </div>
-            <div class="col-sm col-md">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center" src="images/cartoonVasilis.png"
-                        alt="Vasilis Wilson">
-                    <div class="media-body">
-                        <h2 class="mt-0">Vasilis Wilson</h2>
-                        <p class="col d-none d-md-block">Vasilis is well informed of all the current
-                            trends in pastry and contributes his innovative ideas in our products.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="row row-content justify-content-center">
             <div class="col-12 col-sm-8">
                 <div class="card border-deafult">
